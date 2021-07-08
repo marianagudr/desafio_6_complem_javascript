@@ -19,9 +19,9 @@ class Tienda {
 const tiendaOnLine = new Tienda("Tienda online");
 
 while (tiendaOnLine.productos.length < 3) {
-    nombre = prompt("Ingrese el nombre del producto:");
-    tipo = prompt("Ingrese el tipo de producto:");
-    precio = Number(prompt("Ingrese el precio del producto:"));
+    let nombre = prompt("Ingrese el nombre del producto:");
+    let tipo = prompt("Ingrese el tipo de producto:");
+    let precio = Number(prompt("Ingrese el precio del producto:"));
     tiendaOnLine.agregarProductos(new Producto(nombre, tipo, precio));
 }
 
